@@ -26,11 +26,8 @@ RingBuffer::RingBuffer(int n)
 // add a value to the current write pointer
 void RingBuffer::enqueue(int value)
 {
-	//std::cout << "old value: " << write->value;
 	write->value = value;
-	//std::cout << " - new value: " << write->value << std::endl;
 	write = write->next;
-	//std::cout << " next value: " << write->value << std::endl;
 }
 
 

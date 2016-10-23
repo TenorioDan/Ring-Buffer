@@ -3,7 +3,7 @@
 
 int main()
 {
-	RingBuffer buffer(5);
+	RingBuffer buffer(10);
 	buffer.enqueue(5);
 	buffer.enqueue(6);
 	buffer.enqueue(7);
