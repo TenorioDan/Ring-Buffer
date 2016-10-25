@@ -11,7 +11,7 @@ class RingBuffer
 public:
 	RingBuffer(int);
 	~RingBuffer();
-	void enqueue(int);
+	void add(int);
 	int size();
 	int average();
 

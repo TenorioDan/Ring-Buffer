@@ -24,7 +24,7 @@ RingBuffer::RingBuffer(int n)
 }
 
 // add a value to the current write pointer
-void RingBuffer::enqueue(int value)
+void RingBuffer::add(int value)
 {
 	write->value = value;
 	write = write->next;
